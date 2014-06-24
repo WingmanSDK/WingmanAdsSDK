@@ -1,11 +1,12 @@
 Pod::Spec.new do |s|
+  s.ios.deployment_target = '6.0'
   s.name           = 'WingmanAdsSDK'
-  s.version        = '0.0.4'
+  s.version        = '0.0.6'
   s.license 	   = 'MIT'
   s.summary        = 'WingmanAds SDK for iOS - static library'
   s.homepage       = 'https://github.com/WingmanSDK/WingmanAdsSDK'
   s.authors        = {'Bob de Graaf' => 'graafict@gmail.com'}
-  s.source         = { :git => 'https://github.com/WingmanSDK/WingmanAdsSDK.git', :tag => '0.0.4' }
+  s.source         = { :git => 'https://github.com/WingmanSDK/WingmanAdsSDK.git', :tag => '0.0.6' }
   s.preserve_paths = 'libWingmanAdsSDK.a'
   s.source_files   = '**/*.{h,m}'
   s.frameworks 	    = 'StoreKit', 'CoreLocation', 'MessageUI', 'OpenAl', 'AVFoundation', 'CFNetwork', 'CoreMotion', 'CoreMedia', 'EventKit', 'EventKitUI', 'CoreTelephony', 'MediaPlayer', 'AudioToolbox', 'MobileCoreServices', 'Security', 'AssetsLibrary', 'SystemConfiguration', 'QuartzCore'
@@ -15,9 +16,8 @@ Pod::Spec.new do |s|
   s.requires_arc   = true
   s.xcconfig 	    = { 'OTHER_LDFLAGS' => '-lObjC', 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/WingmanAdsSDK"' }
   s.dependency 'BDGMacros'
-  s.dependency 'BDGWebviewVC'
   s.dependency 'BDGLocation'
+  s.dependency 'BDGWebviewVC'
   s.dependency 'BDGInAppPurchase'
-  s.dependency 'Reachability'
-  s.dependency 'UIDeviceAddition'
+  s.dependency 'AFNetworking/Reachability'
 end

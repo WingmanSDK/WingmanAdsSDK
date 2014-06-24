@@ -11,7 +11,6 @@
 
 #import "WMAds.h"
 
-
 //Singletons
 #define wmAds           [WMAds sharedWMAds]
 #define locGetter       [BDGLocation sharedBDGLocation]

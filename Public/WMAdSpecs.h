@@ -5,8 +5,6 @@
 //  Copyright 2011 Mobile Pioneers. All rights reserved.
 //
 
-#import "WMConstants.h"
-
 #import <Foundation/Foundation.h>
 
 //AdTypes

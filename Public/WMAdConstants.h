@@ -1,22 +1,22 @@
 //
-//  WMConstants.h
+//  WMAdConstants.h
 //
 //  Created by Bob de Graaf on 23-09-12.
 //  Copyright (c) 2012 MobilePioneers. All rights reserved.
 //
 
 #import <BDGMacros.h>
+#import <InAppStore.h>
+#import <InAppPurchase.h>
+#import <LocationGetter.h>
 
 #import "WMAds.h"
-#import "InAppStore.h"
-#import "InAppPurchase.h"
-#import "LocationGetter.h"
 
 //Singletons
 #define wmAds           [WMAds sharedWMAds]
 #define wmIAStore       [InAppStore sharedInAppStore]
 #define wmIAPurchase    [InAppPurchase sharedInAppPurchase]
-#define locGetter       [LocationGetter sharedLocationGetter]
+#define wmLocGetter     [LocationGetter sharedLocationGetter]
 
 //Notifications
 #define kWMAdsRefreshNotification               @"kWMAdsRefreshNotification"

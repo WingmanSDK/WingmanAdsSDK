@@ -38,9 +38,7 @@
 
 //Strong
 @property(nonatomic,strong) WMAdSpecs *specs;
-@property(nonatomic,strong) NSString *adMobID;
 @property(nonatomic,strong) UIViewController *parent;
-@property(nonatomic,strong) NSArray *admobTestDevices;
 @property(nonatomic,strong) NSMutableDictionary *headersDict;
 @property(nonatomic,assign) id <WMAdBannerViewDelegate> delegate;
 

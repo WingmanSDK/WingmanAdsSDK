@@ -6,15 +6,11 @@
 //
 
 #import <BDGMacros.h>
-#import <BDGLocation.h>
-#import <BDGInAppPurchase.h>
 
 #import "WMAds.h"
 
-//Singletons
+//Share instance shortcut
 #define wmAds           [WMAds sharedWMAds]
-#define locGetter       [BDGLocation sharedBDGLocation]
-#define wmIAPurchase    [BDGInAppPurchase sharedBDGInAppPurchase]
 
 //Notifications
 #define kWMAdsRefreshNotification               @"kWMAdsRefreshNotification"

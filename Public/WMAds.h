@@ -23,6 +23,13 @@
 - (void)didEndIAS;
 @end
 
+//LogginLevel
+typedef enum {
+    WMLogWarnings=0,
+    WMLogEverything,
+    WMLogNothing
+} WMLoggingLevel;
+
 @interface WMAds : NSObject <MFMailComposeViewControllerDelegate, UIAlertViewDelegate>
 {
     
@@ -39,11 +46,17 @@
 -(BOOL)canLoadAd:(WMAdSpecs *)specs;
 -(void)willLoadAd:(WMAdSpecs *)specs;
 -(void)refreshAdXML:(NSString *)urlStr;
+-(void)logWarning:(NSString *)message, ... NS_FORMAT_FUNCTION(1,2);
+-(void)logInformation:(NSString *)message, ... NS_FORMAT_FUNCTION(1,2);
 -(void)openInAppEmail:(NSString*)mailSubject mailBody:(NSString*)mailBody mailTo:(NSString *)mailTo isHtml:(BOOL)isHtml;
 
+//Primitives
 @property(nonatomic) bool loading;
 @property(nonatomic) CGRect box2DFrame;
 @property(nonatomic) UIBarStyle barStyle;
+@property(nonatomic) WMLoggingLevel loggingLevel;
+
+//Strong
 @property(nonatomic,strong) NSString *apiKey;
 @property(nonatomic,strong) NSString *apiPath;
 @property(nonatomic,strong) NSString *adURLStr;
@@ -53,9 +66,12 @@
 @property(nonatomic,strong) NSMutableDictionary *adsDict;
 @property(nonatomic,strong) NSMutableDictionary *headersDict;
 @property(nonatomic,strong) UIViewController *fullScreenParentVC;
+
+//Delegates
 @property(nonatomic,assign) id<WMAdsIASDelegate>inAppStoreDelegate;
 @property(nonatomic,assign) id<WMAdsIAPDelegate>inAppPurchaseDelegate;
 
+//Shared instance
 +(WMAds *)sharedWMAds;
 
 @end

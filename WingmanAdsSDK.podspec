@@ -1,12 +1,12 @@
 Pod::Spec.new do |s|
   s.ios.deployment_target = '6.0'
   s.name           = 'WingmanAdsSDK'
-  s.version        = '0.0.15'
+  s.version        = '0.0.16'
   s.license 	   = 'MIT'
   s.summary        = 'WingmanAds SDK for iOS - static library'
   s.homepage       = 'https://github.com/WingmanSDK/WingmanAdsSDK'
   s.authors        = {'Bob de Graaf' => 'graafict@gmail.com'}
-  s.source         = { :git => 'https://github.com/WingmanSDK/WingmanAdsSDK.git', :tag => '0.0.15' }
+  s.source         = { :git => 'https://github.com/WingmanSDK/WingmanAdsSDK.git', :tag => '0.0.16' }
   s.preserve_paths = 'libWingmanAdsSDK.a'
   s.source_files   = '**/*.{h,m}'
   s.frameworks 	    = 'StoreKit', 'CoreLocation', 'MessageUI', 'OpenAl', 'AVFoundation', 'CFNetwork', 'CoreMotion', 'CoreMedia', 'EventKit', 'EventKitUI', 'CoreTelephony', 'MediaPlayer', 'AudioToolbox', 'MobileCoreServices', 'Security', 'AssetsLibrary', 'SystemConfiguration', 'QuartzCore'

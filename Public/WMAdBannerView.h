@@ -30,6 +30,7 @@
 
 //Booleans
 @property(nonatomic) bool canExit;
+@property(nonatomic) bool isLoadingAd;
 @property(nonatomic) bool interstitialReady;
 
 //Floats

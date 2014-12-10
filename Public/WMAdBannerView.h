@@ -46,7 +46,7 @@
 -(void)clearAds;
 -(void)reloadURL;
 -(void)measureAd;
--(void)showInterstitial;
+-(BOOL)showInterstitial;
 -(void)loadAd:(NSString *)viewName;
 -(id)initWithFrame:(CGRect)frame parent:(UIViewController *)parent;
 

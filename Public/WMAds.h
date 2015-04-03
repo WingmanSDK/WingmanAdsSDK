@@ -66,6 +66,7 @@ typedef enum {
 @property(nonatomic,strong) NSMutableDictionary *adsDict;
 @property(nonatomic,strong) NSMutableDictionary *headersDict;
 @property(nonatomic,strong) UIViewController *fullScreenParentVC;
+@property(nonatomic,strong) NSMutableArray *log;
 
 //Delegates
 @property(nonatomic,assign) id<WMAdsIASDelegate>inAppStoreDelegate;

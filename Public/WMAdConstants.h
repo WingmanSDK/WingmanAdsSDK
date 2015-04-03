@@ -30,3 +30,7 @@
 
 //IAP Keys
 #define kPurchasedNoAds                         @"kPurchasedNoWMAds"
+
+//Log Keys
+#define kLogDateKey                             @"date"
+#define kLogMessageKey                          @"message"

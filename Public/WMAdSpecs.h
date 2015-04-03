@@ -46,14 +46,17 @@ typedef enum {
 @property(nonatomic,strong) NSString *box2DPopupImageURL;
 
 @property(nonatomic) int interval;
+@property(nonatomic) int startInterval;
 @property(nonatomic) int adAnim;
 @property(nonatomic) int siteID;
 @property(nonatomic) int adRow;
 @property(nonatomic) int adSection;
 @property(nonatomic) int adHeight;
 @property(nonatomic) int adDelay;
+@property(nonatomic) int buttonDelay;
 @property(nonatomic) bool active;
 @property(nonatomic) bool overlay;
+@property(nonatomic) bool inlineOverlay;
 @property(nonatomic) bool IAPPossible;
 @property(nonatomic) bool directAppStore;
 
